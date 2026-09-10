@@ -880,7 +880,7 @@ async def execute_flow(flow, data, update: Update):
         ok, info = add_user(data["username"], data["password"], data["days"], data["ip_limit"], data["gb_limit"])
         if ok:
             dom = get_domain()
-            payload = f"GET /ARTricks HTTP/1.1[crlf]Host: {dom}[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]:<div><span style="color: #0000ff"> 𓄂꯭♡ALIRAZA|</span></div> Upgrade[crlf]User-Agent: [ua][crlf][crlf]"
+            payload = f"GET /ARTricks HTTP/1.1[crlf]Host: {dom}[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]"
             msg = (
                 f"\u2705 *Account Created*\n\n"
                 f"Domain: `{dom}`\n"
