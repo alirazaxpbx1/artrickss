@@ -1853,58 +1853,6 @@ while true; do
 
     read -rp "  › " opt
 
-    case "$opt" in
-        1|01)
-            auto_install
-            ;;
-
-        2|02)
-            domain_manager
-            ;;
-
-        3|03)
-            issue_ssl
-            ;;
-
-        4|04)
-            account_manager
-            ;;
-
-        5|05)
-            check_status_ports
-            ;;
-
-        6|06)
-            ssh_banner_manager
-            ;;
-
-        7|07)
-            connection_manager
-            ;;
-
-        8|08)
-            telegram_bot_manager
-            ;;
-
-        9|09)
-            uninstall_panel
-            ;;
-
-        0|00|10)
-            echo -e "${GREEN}Exiting panel...${NC}"
-            exit 0
-            ;;
-
-        *)
-            echo -e "${RED}Invalid option! Please select 01-09 or 00.${NC}"
-            sleep 2
-            ;;
-    esac
-
-    echo
-    read -rp "Press Enter to return to the main menu..."
-done
-
     case $opt in
         1) install_all_components ;;
         2) add_domain_option ;;
